@@ -17,6 +17,15 @@ The inspected [Pods OpenAPI](https://api.pods.finance/openapi.json) advertises a
 production server. Obtain test instructions from Pods; do not invent a sandbox
 hostname or infer safety from a different API key.
 
+## EVM testnet: Sepolia
+
+The [Sepolia manual](sepolia.md) defines an opt-in Ethereum EVM profile with chain
+ID `11155111`, your own RPC and dedicated test wallets/assets. Keep mock mode
+offline. In a generated application, explicitly enable only supported EVM test
+capabilities under test mode. Woovi's sandbox, Pods permissions and Bitcoin network
+settings remain independent. A test token balance cannot stand in for Pix or fiat
+settlement.
+
 ## Enforce separation
 
 Persist tenant, environment, provider account reference and idempotency key when

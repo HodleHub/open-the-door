@@ -40,6 +40,11 @@ specific product permissions, and implement one adapter at a time. Use Woovi's
 separate test environment where available. Obtain an explicitly authorized test
 setup from Pods rather than assuming its production host is safe for experiments.
 
+For EVM wallet and contract testing, follow the
+[Ethereum Sepolia guide](docs/getting-started/sepolia.md). It covers chain validation,
+your own RPC, test gas/tokens and supported swap paths. Enable it explicitly in the
+generated application; it does not enable a Pods or Woovi test account.
+
 ## Completion criteria
 
 A useful first build signs in, shows a demo wallet, walks through synthetic KYC,

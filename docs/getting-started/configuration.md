@@ -19,6 +19,12 @@ Read `.env.example` for placeholder names. Keep signing keys and seeds outside
 ordinary application environment files. Inject a reference to a signer instead.
 Do not put server credentials into build-time browser variables.
 
+The optional [Sepolia profile](sepolia.md) adds `EVM_TEST_ENABLED`,
+`EVM_TEST_NETWORK`, `EVM_TEST_CHAIN_ID`, `SEPOLIA_RPC_URL` and
+`SEPOLIA_EXPLORER_URL`. Keep it disabled in mock mode. Treat credential-bearing
+RPC URLs as server secrets. An operator must explicitly enable the EVM test
+capability in test mode; it does not activate other provider integrations.
+
 ## Validate before startup
 
 Require explicit mode and network. Reject missing keys for enabled real adapters.
@@ -30,6 +36,11 @@ Track capabilities separately from configuration: possessing a key does not gran
 BaaS, Pix payout or a currency rail. [Provider contracts](../providers/contracts.md)
 define this distinction. Persist environment on every operation so a worker cannot
 resume a test operation against live credentials.
+
+For Sepolia, require the configured and RPC-observed chain ID to be `11155111`
+at startup. Recheck the signer and prepared transaction before signing/submission.
+Reject mismatches and unavailable RPCs; never silently switch to mainnet or another
+network. Environment and chain are separate fields on persisted operations.
 
 ## Changing configuration
 

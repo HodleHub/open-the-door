@@ -11,6 +11,9 @@ START.md, docs/README.md and prompts/build-neobank.md before building an applica
   interfaces, never on Privy-specific identities or SDK response objects.
 - Use Pods as the initial ramp/swap integration. Woovi is a separately configured
   Pix/BaaS integration. Bitcoin integrations use Spark and Lightning.
+- Include an opt-in Ethereum Sepolia EVM test profile following
+  docs/getting-started/sepolia.md. Keep mock mode offline and validate RPC, signer
+  and transaction chain IDs before signing. Sepolia does not enable fiat rails.
 - The only Hodle integration repository linked by this kit is the public
   aws-rekognition-liveness capture project. Do not import private source, history,
   account configuration, business rules or operational documents from other repos.

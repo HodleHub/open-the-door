@@ -34,6 +34,12 @@ version, enabled capability, request acceptance, status verification and recover
 behavior privately. Capture sanitized result codes rather than identity-bearing
 payloads. A live funds test requires a separately controlled operator procedure.
 
+For EVM testing, use the [Ethereum Sepolia sequence](../getting-started/sepolia.md)
+in your generated application with your own test wallets. Check RPC/signer chain
+IDs, gas, exact assets, approval and receipt recovery. This is a separate opt-in
+exercise; the kit's checks do not submit on-chain transactions. It does not validate
+fiat rails or imply that every swap provider supports the testnet.
+
 ## Publication
 
 Run a redacted secret scanner and review the complete inventory/history. Keep

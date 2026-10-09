@@ -15,6 +15,14 @@ in that adapter. If using a smart account, follow its selected account-abstracti
 version, bundler and paymaster contracts. Those are adapter-specific requirements,
 not universal EVM behavior.
 
+## Sepolia testing
+
+Follow the [Ethereum Sepolia manual](../getting-started/sepolia.md) for RPC setup,
+test gas/tokens and a transfer validation sequence. Bind RPC, signer, transaction
+and assets to chain `11155111`; reject mainnet and other test networks. A wallet
+address does not identify its network. Keep test assets and operation records
+separate from mock and live state, and show a persistent testnet label.
+
 ## Approvals and swaps
 
 Read current allowance and request only the necessary approval under your product

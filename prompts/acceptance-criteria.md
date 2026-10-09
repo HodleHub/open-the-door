@@ -15,6 +15,21 @@ static screens. Use synthetic adapters until real integrations are authorized.
 - Settings explain the actual custody and recovery model.
 - Mock mode has a persistent visible demo label.
 
+## Sepolia profile
+
+- The generated app documents opt-in RPC setup, test gas/tokens and validation.
+- Mock mode remains offline; enabling EVM test mode does not enable live fiat rails.
+- Sepolia mode shows a persistent testnet label and keeps assets/storage separate.
+- RPC, signer, transaction, quote and asset chain IDs must match `11155111`.
+- Tests reject mainnet (`1`), Base Sepolia (`84532`) and unavailable RPC responses
+  before signing/submission; a matching wallet address cannot bypass network checks.
+- Missing token/router support or an unavailable swap route cannot show success.
+- Synthetic checks use mocked I/O. External test transfers require explicit operator
+  setup and user approval in the generated app, with sanitized results kept private.
+
+Use the [Sepolia manual](../docs/getting-started/sepolia.md) for setup and the manual
+wallet/swap sequence. Passing these checks does not imply on-chain validation.
+
 ## Invariants
 
 Attempt B's evidence cannot complete attempt A. Subject A cannot use subject B's

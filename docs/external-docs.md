@@ -9,6 +9,8 @@ The kit does not include credentials or private documentation access.
 | Pods               | [Public OpenAPI](https://api.pods.finance/openapi.json)                                                   | paths, request schemas, securitySchemes and responses         |
 | Woovi              | [Developer portal](https://developers.woovi.com/)                                                         | API getting started, test environment, BaaS and API explorer  |
 | Privy              | [Docs](https://docs.privy.io/)                                                                            | Backend access-token verification and chosen wallet SDK       |
+| Ethereum Sepolia   | [Ethereum network guide](https://ethereum.org/developers/docs/networks/)                                  | Application testnet, explorer and ETH faucets                 |
+| Test USDC          | [Circle faucet](https://faucet.circle.com/)                                                               | Ethereum Sepolia; verify the Testnet contract in Circle docs  |
 | Hodle liveness     | [Public repo](https://github.com/HodleHub/aws-rekognition-liveness)                                       | README setup, integration contract and SECURITY.md            |
 | AWS Rekognition    | [Programming guide](https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-programming-api.html) | Create session, capture permissions and trusted results       |
 | Spark              | [Docs](https://docs.spark.money/)                                                                         | Selected wallet SDK, network and signer                       |
@@ -25,6 +27,12 @@ Start with product prerequisites and account access. Then verify environment,
 authentication, required fields, amount units, approval/submission semantics,
 status and recovery. Read endpoint schemas as well as workflow prose. A documented
 feature may still require account-specific activation.
+
+For EVM test setup, follow the [Sepolia manual](getting-started/sepolia.md). Open
+Circle's [USDC contract reference](https://developers.circle.com/stablecoins/usdc-contract-addresses)
+and use its Testnet section. For direct swaps, select the Ethereum Sepolia column
+of Uniswap's [v3 deployment reference](https://developers.uniswap.org/docs/protocols/v3/deployments/v3-ethereum-deployments).
+Verify protocol deployments and API network support separately.
 
 ## Private access
 

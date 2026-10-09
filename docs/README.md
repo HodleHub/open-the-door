@@ -11,6 +11,9 @@ manual is indexed here; the code examples live in [templates](../templates/READM
 4. [KYC](kyc/README.md), [wallet](wallet/README.md), [swaps](swaps/README.md) and [Bitcoin](bitcoin/README.md).
 5. [Testing](operations/testing.md), [deployment](operations/deployment.md) and [publication](security/publication.md).
 
+For an external EVM test run after the mock build, follow
+[Ethereum Sepolia](getting-started/sepolia.md).
+
 Each manual explains its prerequisites, flow, trust boundaries, failure recovery
 and validation within its scope. Follow [official docs](external-docs.md) for current
 provider schemas and account-specific capabilities. The initial app is a synthetic
@@ -62,6 +65,7 @@ build; external approvals and settlement require independent validation.
 - [Build with one prompt](getting-started/one-prompt.md)
 - [Create your provider accounts](getting-started/provider-accounts.md)
 - [Mock, test and live environments](getting-started/sandbox.md)
+- [Ethereum Sepolia test environment](getting-started/sepolia.md)
 
 ## docs/kyc
 

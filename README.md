@@ -20,20 +20,22 @@ included, and cloning the repository does not open a bank account.
 4. Follow [Pods](docs/providers/pods/README.md) and [Woovi](docs/providers/woovi/README.md).
 5. Integrate [KYC](docs/kyc/README.md) and our public [self-hosted liveness](docs/kyc/self-hosted-liveness.md).
 6. Add [swaps](docs/swaps/README.md) and the [Bitcoin tab](docs/bitcoin/README.md).
+7. Validate EVM integrations with the [Ethereum Sepolia guide](docs/getting-started/sepolia.md).
 
 ## What's inside
 
-| Area             | What you get                                                               |
-| ---------------- | -------------------------------------------------------------------------- |
-| Builder workflow | One prompt, acceptance criteria, screen map and implementation sequence    |
-| Wallet           | Provider-neutral contracts, Privy boundary, ownership and signing examples |
-| KYC              | Evidence references, state machine, consent, trusted liveness verification |
-| Pods             | Account access, public API map, quotes, KYC, Pix ramps and status handling |
-| Woovi            | Signup, sandbox, AppID, Master API, customer accounts, charges and payouts |
-| Swaps            | Quote lifecycle, transaction validation, Uniswap and other adapter paths   |
-| Bitcoin          | Spark, Lightning, Breez SDK, Flashnet, LNURL and recovery                  |
-| Templates        | Small typed building blocks and synthetic integration examples             |
-| Publication      | PII rules, secret scanning and a fresh-history release procedure           |
+| Area             | What you get                                                                     |
+| ---------------- | -------------------------------------------------------------------------------- |
+| Builder workflow | One prompt, acceptance criteria, screen map and implementation sequence          |
+| Wallet           | Provider-neutral contracts, Privy boundary, ownership and signing examples       |
+| KYC              | Evidence references, state machine, consent, trusted liveness verification       |
+| Pods             | Account access, public API map, quotes, KYC, Pix ramps and status handling       |
+| Woovi            | Signup, sandbox, AppID, Master API, customer accounts, charges and payouts       |
+| Swaps            | Quote lifecycle, transaction validation, Uniswap and other adapter paths         |
+| Bitcoin          | Spark, Lightning, Breez SDK, Flashnet, LNURL and recovery                        |
+| Templates        | Small typed building blocks and synthetic integration examples                   |
+| Test environment | Ethereum Sepolia configuration, RPC checks, faucets, wallets and swap validation |
+| Publication      | PII rules, secret scanning and a fresh-history release procedure                 |
 
 ## Local checks
 

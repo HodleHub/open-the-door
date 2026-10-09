@@ -32,6 +32,15 @@ For swaps, support quote, fee/minimum-output review, approval, submission and fi
 status. Document Uniswap and additional adapter paths. Independently validate
 network, asset, recipient, spender, amount, fee and expiry before signing.
 
+Include an opt-in Ethereum Sepolia EVM test profile following
+docs/getting-started/sepolia.md and the named settings in .env.example. Keep mock
+mode offline by default. Validate RPC, signer, transaction, quote and asset chain
+IDs against 11155111; never fall back to mainnet. Isolate test assets/storage and
+display a persistent testnet label. Configure only independently verified test
+capabilities; Sepolia does not enable Pods/Woovi or guarantee a swap route. Keep
+unavailable features disabled or visibly mocked. Do not make RPC/provider calls
+or submit test transactions while building or running synthetic checks.
+
 For Bitcoin, implement Spark/Lightning-oriented ports, Breez SDK lifecycle,
 Flashnet planning, LNURL Pay/Withdraw/Auth and Lightning address UX using this
 kit's manuals. Keep credentials and signing material out of application source.

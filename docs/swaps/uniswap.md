@@ -35,6 +35,16 @@ Check allowance and the documented spender. Decode router calldata and any permi
 or signature intent independently. Verify chain, recipient, amount, minimum output,
 expiry and fee bounds before approval. Persist approval and swap references separately.
 
+## Sepolia path
+
+Uniswap documents v3 contracts for Ethereum Sepolia in its
+[deployment table](https://developers.uniswap.org/docs/protocols/v3/deployments/v3-ethereum-deployments).
+Follow the [Sepolia manual](../getting-started/sepolia.md) to verify the selected
+contracts, assets and an executable route on `11155111`. Deployed protocol contracts
+do not establish testnet support for the Trading API or another provider. Verify
+service support separately; use a direct SDK/protocol path only when validated.
+If no route is available, keep the capability disabled or visibly mocked.
+
 ## Validation
 
 Use a configured test network or local fork with synthetic funds where supported;
