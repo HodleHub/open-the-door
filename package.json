@@ -1,0 +1,24 @@
+{
+  "name": "open-the-door",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Docs-first neobank builder kit with original provider-neutral templates",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "docs:check": "node scripts/checkDocs.mjs",
+    "hygiene:check": "node scripts/checkHygiene.mjs",
+    "test": "tsc && node --test tests/*.test.mjs",
+    "check": "npm run format:check && npm run typecheck && npm run docs:check && npm run hygiene:check && npm test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
+  }
+}
