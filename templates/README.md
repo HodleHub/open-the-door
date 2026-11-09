@@ -4,14 +4,15 @@ These are small TypeScript examples written for this kit. They compile with stri
 types and are tested with synthetic dependencies. They are not copied production
 modules or complete provider integrations.
 
-| Directory | Contract/examples                                                    | Remaining application responsibility                         |
-| --------- | -------------------------------------------------------------------- | ------------------------------------------------------------ |
-| core      | Exact amounts, scope and result types                                | Authentication and persistence                               |
-| wallet    | Portable wallet port and Privy boundary                              | Current SDK, ownership verifier and approval store           |
-| kyc       | Evidence references and decision projection                          | Capture, trusted verification and restricted storage         |
-| providers | Bounded JSON transport, Pods quote and Woovi charge                  | Accounts, credentials, complete schemas and status           |
-| swaps     | Portable port, quote guard and integer slippage                      | Calldata validation, approval, submission and reconciliation |
-| bitcoin   | Breez runtime, Lightning preparation, Flashnet plan and LNURL checks | Actual SDK bindings, parsers, networking and settlement      |
+| Directory | Contract/examples                                                              | Remaining application responsibility                         |
+| --------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| core      | Exact amounts, scope and result types                                          | Authentication and persistence                               |
+| wallet    | Portable wallet port and Privy boundary                                        | Current SDK, ownership verifier and approval store           |
+| kyc       | Evidence references and decision projection                                    | Capture, trusted verification and restricted storage         |
+| providers | Bounded JSON transport, Pods quote and Woovi charge                            | Accounts, credentials, complete schemas and status           |
+| swaps     | Portable port, quote guard and integer slippage                                | Calldata validation, approval, submission and reconciliation |
+| seo       | Sitemap, robots.txt crawler access, page audit, daily check, window comparison | Bounded fetch, scheduler, metric sources and storage         |
+| bitcoin   | Breez runtime, Lightning preparation, Flashnet plan and LNURL checks           | Actual SDK bindings, parsers, networking and settlement      |
 
 ## Reuse
 

@@ -10,6 +10,7 @@ manual is indexed here; the code examples live in [templates](../templates/READM
 3. [Provider accounts](getting-started/provider-accounts.md), [Pods](providers/pods/README.md) and [Woovi](providers/woovi/README.md).
 4. [KYC](kyc/README.md), [wallet](wallet/README.md), [swaps](swaps/README.md) and [Bitcoin](bitcoin/README.md).
 5. [Testing](operations/testing.md), [deployment](operations/deployment.md) and [publication](security/publication.md).
+6. Public site discovery: [SEO, GEO and AEO](growth/seo.md) and the [daily loop](growth/seo-daily.md).
 
 For an external EVM test run after the mock build, follow
 [Ethereum Sepolia](getting-started/sepolia.md).
@@ -66,6 +67,11 @@ build; external approvals and settlement require independent validation.
 - [Create your provider accounts](getting-started/provider-accounts.md)
 - [Mock, test and live environments](getting-started/sandbox.md)
 - [Ethereum Sepolia test environment](getting-started/sepolia.md)
+
+## docs/growth
+
+- [SEO, GEO and AEO](growth/seo.md)
+- [Daily SEO loop: check, observe, compare, improve](growth/seo-daily.md)
 
 ## docs/kyc
 
@@ -148,6 +154,10 @@ build; external approvals and settlement require independent validation.
 - [Generated application acceptance](../prompts/acceptance-criteria.md)
 - [Prompt: add one provider adapter](../prompts/add-provider.md)
 - [One prompt: build my neobank](../prompts/build-neobank.md)
+
+## skills
+
+- [Skill: SEO, GEO and AEO loop](../skills/seo/SKILL.md)
 
 ## templates
 

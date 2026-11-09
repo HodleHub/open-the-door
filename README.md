@@ -34,6 +34,7 @@ included, and cloning the repository does not open a bank account.
 | Swaps            | Quote lifecycle, transaction validation, Uniswap and other adapter paths         |
 | Bitcoin          | Spark, Lightning, Breez SDK, Flashnet, LNURL and recovery                        |
 | Templates        | Small typed building blocks and synthetic integration examples                   |
+| SEO, GEO, AEO    | Sitemap and crawler checks, daily loop, metric comparison and an agent skill     |
 | Test environment | Ethereum Sepolia configuration, RPC checks, faucets, wallets and swap validation |
 | Publication      | PII rules, secret scanning and a fresh-history release procedure                 |
 
