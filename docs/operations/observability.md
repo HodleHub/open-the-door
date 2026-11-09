@@ -33,4 +33,5 @@ attach production payloads to issues to make diagnosis easier.
 Keep customer-facing messages simple: pending, unavailable, needs correction or
 confirmed. Technical details belong in authorized operator tools. Read
 [PII](../security/pii.md), [provider contract](../providers/contracts.md) and
-[Woovi reconciliation](../providers/woovi/reconciliation.md).
+[Woovi reconciliation](../providers/woovi/reconciliation.md). Public-site search
+signals are covered in the [daily SEO loop](../growth/seo-daily.md).
